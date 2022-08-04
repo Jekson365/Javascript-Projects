@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="play-till">
+        <div class="flex-box">
+            <h1>Choose score</h1>
+            <i id="close-score">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+            </i>
+            <button class="score-btn" data-score="5">5</button>
+            <button class="score-btn" data-score="10">10</button>
+            <button class="score-btn" data-score="15">15</button>
+            <button class="score-btn" data-score="20">20</button>
+        </div>
+    </div>
+    <div class="winner-text">
+        <div class="close-btn">
+            <i id="close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+            </i>
+        </div>
+        <div class="win">
+            <h1>Winner is</h1>
+            <span class="myspan"></span>
+        </div>
+    </div>
+    <div class="main-container">
+
+        <div class="counter">
+            <div id="player-1">
+                <p class="count" id="count-player-1">0</p>
+                <div class="marked-o countBox"></div>
+            </div>
+            <div id="banner">
+                <h2 id="winner-text"></h2>
+            </div>
+            <div id="player-2">
+                <p class="count" id="count-player-2">0</p>
+                <div class="marked-x countBox"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box" id="box-1"></div>
+            <div class="box" id="box-2"></div>
+            <div class="box" id="box-3"></div>
+            <div class="box" id="box-4"></div>
+            <div class="box" id="box-5"></div>
+            <div class="box" id="box-6"></div>
+            <div class="box" id="box-7"></div>
+            <div class="box" id="box-8"></div>
+            <div class="box" id="box-9"></div>
+        </div>
+    </div>
+    <div class="reset-button">
+        <button class="reset" id="reset">
+            Reset
+        </button>
+    </div>
+     
+    <script src="index.js"></script>
+</body>
+
+</html>
